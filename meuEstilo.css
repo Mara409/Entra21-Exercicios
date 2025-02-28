@@ -1,0 +1,13 @@
+button{
+    color: antiquewhite;
+}
+
+#salvar{
+    background-color: blue;
+}
+#excluir{
+    background-color: cadetblue;
+}
+#cancelar{
+    background-color: chocolate;
+}
