@@ -1,45 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <div></div>
 
-
-
-
-
-
+<div>
+  
     <style>
-        .footer {
-            background-color: chartreuse;
-            color: azure;
-            text-align: left;
-            padding: 10px;
-            margin: top 22px;
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+          text-align: center;
         }
 
-        li>a {
-            display: inline-block;
-            width: 50px;
-            text-decoration: none;
-            margin-right: 6px;
-            background-color: beige;
-            color: blueviolet;
-            padding: 5px;
-            margin: top 5px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 0px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 0px;
-            width: 120px;
-
+        .nav {
+            display: flex;
+            background-color: bisque; /* cabeçalho */
+            height: 120px;
+            width: 100%;
         }
 
         li>a:hover {
-
 
             background-color: beige;
             color: blueviolet;
@@ -49,89 +33,166 @@
             border-bottom-right-radius: 0px;
         }
 
-        .navbar {
+        .logo {
+            width:20%;
             display: flex;
-            justify-content: space-between;
-            background-color: burlywood;
+            justify-content:center;
+            align-items: center;
+        }
+
+        .logo img{
+            width: 100px;
+            border: radius 50px;
+
 
         }
 
         .nav-links {
+           
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+            width: 60%;
+            height: 100px;        
+        }
+
+        .nav-links a { /*links*/
+            text-decoration: none;
+            padding: 10px;
+            background-color: bisque;
+            display: inline-block;
+            width: 100px;
+            font-size:  25px;
+            color: rgb(225, 146, 42);
+        }
+
+        .nav-links ul {
             list-style: none;
             display: flex;
-            justify-content: row;
-
+        }
+       
+        .conteudo-principal {
+            display: flex;
+            justify-content: top;
+            padding: 20px;
         }
 
-        .logo {
-            background-color: blanchedalmond;
+        .foto-flor {
+            flex: 1;
+            display: flex;
+            justify-content: left;
         }
 
-        .logo>img {
-            width: 50%;
+        .foto-flor img {
+        margin: -20px;
+        max-width: 400px;
+        height: 647px;
         }
 
-        .adm {
-            background-color: cornflowerblue;
+        .principal {
+            flex: 2;
+            text-align: center;
+            padding: 20px;
         }
 
-        .adm input {}
+        .principal h1, .principal h2, .principal p {
+            display: block;
+            text-align: center;
+        }
+
+
+        .text-container {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+       
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(168, 141, 193);
+            color: black;
+            display: flex;
+            position:fixed;
+            bottom: 0%;
+        }
+
+        .container-footer{
+            width: 150px;
+            height: auto;
+
+        }
     </style>
+
 
 </head>
 
+
 <body>
-    <div class="navbar">
-        <div><img src="imagens/d1.jpg" alt=""></div>
-        <ul class="nav-links">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">Sobre</a></li>
-            <li> <a href="#">Cadastro</a></li>
-            <li> <a href="#">Consulta</a></li>
-            <li> <a href="#">Fotos</a></li>
-
-        </ul>
-        <div>
-            <input type="search" value="  ">
+     <div class="nav">
+        <div class="logo">
+            <div><img src="logo.jpg" alt=""></div>
         </div>
-      
-    </div class="footer">
-
-    <img src="imagens/d1.jpg" alt="">
-
-<h1>Mineradora Castelo</h1>
-
-<p>Escolha os mais belos diamantes para suas Joias.Diamantes naturais e sinteticos com certificação e procedencia
-    A mineração de diamantes envolve o processo de extração de minério de várias minas ricas em pedras preciosas. Geólogos determinam as regiões com alta concentração de um tipo de rocha chamado kimberlito. O processo varia de acordo com a natureza e estrutura do minério, podendo ser extraído de depósitos secundários ou tubos vulcânicos solidificados
-</p>
-
-
-
-
-
-
-
-
-
-
-    <div class="navbar">
-        <div><img src="imagens/d1.jpg" alt=""></div>
-        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
-        <ul class="nav-links">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">Sobre</a></li>
-            <li> <a href="#">Cadastro</a></li>
-            <li> <a href="#">Consulta</a></li>
-            <li> <a href="#">Fotos</a></li>
-
-        </ul>
-        <div>
-            <input type="search" value="  ">
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <br><a href="Home.html">home</a>
+                </li>
+                <li>
+                    <br><a href="Sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <br><a href="Cadastro.html">Cadastro</a>
+                </li>
+                <li>
+                    <br><a href="Fotos.html">Fotos</a>
+                </li>
+            </ul>
+            <p></p>
         </div>
-      
-    </div class="footer">
+     </div>
+   
+    <div class="conteudo-principal">
+        <div class="foto-flor">
+            <img src="fundo.png">
+        </div>
+        <div class="principal">
+            <div class="text-container">
+                <h1></h1>
+                <h2>Quando as palavras fogem, as flores falam. Bruce W. Currie</h2>
+                <br>
 
+                <p>Conecte-se com o seu interior. Florescer a alma é alcançar plenitude, beleza e paz.
+                    <br>Agradeça e persista em seus propósitos.
+                    <br>
+                    <br>A vida acontece, não avisa. Emicida </p>
+                    <br>
+                    Temos que falar sobre libertar mentes tanto quanto sobre libertar a sociedade. Angela Davis.
+                    <br>
+                    
+                    <br>
 
+                    É preciso o infortúnio para escavar certas jazidas misteriosas escondidas na inteligência
+                     humana; é preciso pressão para fazer a pólvora explodir. O Conde de Monte Cristo
+                     <br>
+
+                     <br>
+                     Em política, meu caro, sabe tão bem quanto eu, não existem homens, mas ideias; 
+                     não existem sentimentos, mas interesses; em política, ninguém mata um homem:
+                      suprime-se um obstáculo. Ponto final. O Conde de Monte Cristo.
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container-footer">
+
+        </div>
+    </div>
+   
 </body>
 
 </html>
